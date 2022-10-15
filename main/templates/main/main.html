@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+            <section class="cards" id="Services">
+                <h2 class="title">Services</h2>
+                <div class="content">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div> 
+                        <div class="info">
+                            <h3>Web Developer</h3>
+                            <p>Create and develop websites , dashboard for full control on it . </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div> 
+                        <div class="info">
+                            <h3>Mobile And Desktop  Developer</h3>
+                            <p>Create and develop  programs for the management of companies and stores .</p>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+            <section class="Projects" id="Projects">
+                <h2 class="title">Projects</h2>
+                <div class="content">
+                    {% for project in projects %}
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="{{project.image.url}}" alt="">
+                            </div>
+                            <div class="project-info">
+                                <p class="project-des">{{project.description}}</p>
+                                <strong class="project-title">
+                                    <strong class="project-ti">
+                                        <span >{{project}}</span>
+                                    </strong>
+                                    <a href="{% url 'main:project_detail' project.slug %}" class="more-details" >View More</a>
+                                </strong>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>   
+{% endblock body %}

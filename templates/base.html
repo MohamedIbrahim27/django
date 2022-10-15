@@ -1,0 +1,88 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge">
+    <meta name="description" content="شركة الشرف لانشاء المواقع وتطبيقات الموبايل والكمبيوتر">
+    <title>El-Shreef</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body> 
+    <header>
+        <a href="#" class="logo"><b class="m-logo">M</b>ohamed</a>
+        <nav class="navigation">
+            <a href="#Home" class="active">Home</a>
+            <a href="#Services" >Services</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <section class="main" id="Home">
+        <div>
+            <h2 class="hello">Hello, Iam <b class="m-logo">M</b>ohamed <br>
+            <span class="soft"><b class="m-logo">S</b>oftware Engineering</span>
+            </h2>
+            <a href="#Projects" class="main-btn">view my work</a>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MohamdElShreeff/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/moh-amed-11917523a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    {% block body %}
+    
+    {% endblock body %}
+    <section class="cards-contact" id="Contact">
+        <h2 class="title">COntact  Me</h2>
+            <div class="content">
+                <div class="car-d">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/MohamdElShreeff/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div> 
+                    <div class="info">
+                        <h3> FaceBook</h3>
+                        <p>الشريف - El-Shreef</p>
+                </div>
+            </div>
+            <div class="car-d">
+                <div class="icon">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div> 
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+201032431926</p>
+                </div>
+            </div>
+            <div class="content">
+            </div>
+            <div class="content">
+                <div class="car-d">
+                    <div class="icon">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></i></a>
+                    </div> 
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>mido.ebrahim08@gmail.com</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="car-d">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/moh-amed-11917523a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div> 
+                    <div class="info">
+                        <h3>Linkedin</h3>
+                        <p>Moh _amed</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <p >copyrights @ <span class="foo-ter">الشريف - El-Shreef</span></p>
+    </footer>
+</body>
+
+
+
